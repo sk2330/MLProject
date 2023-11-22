@@ -2,7 +2,7 @@
 any execution that probably we should be able to log all the 
 information and execution in a file so that we can track for any errors
 '''
-import logging 
+import logging
 import os
 from datetime import datetime
 
@@ -14,6 +14,9 @@ LOG_FILE_PATH=os.path.join(logs_path,LOG_FILE)
 
 logging.basicConfig(
     filename=LOG_FILE_PATH,
-    format="[%(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s",
+    format="[ %(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO,
+
+
 )
+
